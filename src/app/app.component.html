@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <body>
+        <main>
+        <header>
+        <img src="assets/logo.svg" alt="logo">
+        <div class="search-bar">
+            <form>
+                <label for = "fname"> Enter city: </label> 
+                <input type = "text" placeholder="Filter by city"> 
+                <button class="submit-button" type = "submit"> Search </button>
+            </form>
+            </div>
+       </header>
+       <section>
+       <!-- <a  routerLink = "/HomeComponent" routerLinkActive="active" ariaCurrentWhenActive="page">HomeComponent</a> --> 
+       <app-home [(size)]="fontSizePx"></app-home>
+       <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+       </section>
+        </main>
+    </body>
+</html>
